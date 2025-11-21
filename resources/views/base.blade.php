@@ -16,10 +16,5 @@
         @include('script')
     </div>
        
-
-
-    <script src="{{ asset('./public/assets/lib/bootstrap/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('./public/assets/lib/jquery/jquery.js') }}"></script>
-    <script src="{{ asset('./public/assets/lib/jquery/main.js') }}"></script>
 </body>
 </html>
