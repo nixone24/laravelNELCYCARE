@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <title>@yield('title')</title>
     <link rel="stylesheet" href="{{ asset('assets/app.css') }}">
 </head>
 <body>
+     @include('template.navbar')
+    <div class="container">
+       
+        @yield('content')
+        @include('script')
+    </div>
+       
 
-@include('template.navbar')
-@yield('content')
-@include('script')
+
+    <script src="{{ asset('./public/assets/lib/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('./public/assets/lib/jquery/jquery.js') }}"></script>
+    <script src="{{ asset('./public/assets/lib/jquery/main.js') }}"></script>
 </body>
 </html>

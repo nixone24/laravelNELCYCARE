@@ -20,3 +20,7 @@ Route::get('/blog', function () {
 Route::get('/apropos', function () {
     return view('home.apropos');
 })->name('apropos');
+
+Route::get('/service', function () {
+    return view('home.service');
+})->name('service');
