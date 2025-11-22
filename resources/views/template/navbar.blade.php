@@ -10,7 +10,7 @@
           <a class="nav-link @if(request()->routeIs('home')) active @endif" aria-current="page" href="{{route('home')}}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link @if(request()->routeIs('news')) active @endif" href="{{route('news')}}">Info</a>
+          <a class="nav-link @if(request()->routeIs('news')) active @endif" href="{{route('news')}}">News</a>
         </li>
         <li class="nav-item">
           <a class="nav-link @if(request()->routeIs('medecin')) active @endif" href="{{route('medecin')}}">Medecin</a>
