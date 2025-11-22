@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home.home');
-});
+})->name('home');
 
 Route::get('/medecin', function () {
     return view('home.medecin');
